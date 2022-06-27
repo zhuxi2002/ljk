@@ -48,7 +48,7 @@ printf("          |◆|******|◆|       ☆ 退出        请按 3         |◆
 printf("          |◆|******|◆|                                     |◆|******|◆|\n");
 printf("          ◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆\n");
 printf("\n#################################################################################\n");    
-system("color a"); 
+
     scanf("%d",&a);
   switch(a)
 {
@@ -71,7 +71,7 @@ void load()
 {
 FILE *fp;
     int i;
-if((fp=fopen("D://data.txt","r"))==NULL)
+if((fp=fopen("data.txt","r"))==NULL)
     {
         printf("不能打开文件\n");
         return;
@@ -87,7 +87,7 @@ if((fp=fopen("D://data.txt","r"))==NULL)
 void save()      
 {
     FILE *fp;
-    if((fp=fopen("D://data.txt","w"))==NULL)
+    if((fp=fopen("data.txt","w"))==NULL)
     {
         printf("无法打开文件\n");
         exit(0);
